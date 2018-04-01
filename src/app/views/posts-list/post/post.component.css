@@ -1,0 +1,61 @@
+h3  {
+    text-align: left;
+}
+
+.welcomeuser    {
+    margin-right: 5%;
+}
+
+.timedisplay    {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555;
+	line-height: 30px;
+}
+.postbody {
+    height:200px;
+}
+
+.form-control   {
+
+    margin-top: 1rem;
+}
+
+.editpost-input {
+
+    margin-top: 0rem;
+}
+
+.descriptionlbl {
+
+    margin-top: 1em;
+}
+
+.nav-item active    {
+    margin-left: 4rem;
+}
+
+h2 {
+	margin-top: 10px;
+	font-size: 25px;
+    font-weight: 700;
+    color: #555;
+    line-height: 50px;
+}
+
+.postSomething  {
+
+    margin-top: 2rem; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn-success    {
+
+    margin-top: 1rem;
+
+}
+
+.modal-footer   {
+    margin-top: 1em;
+}

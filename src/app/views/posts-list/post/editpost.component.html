@@ -1,0 +1,25 @@
+<div class="modal-header">
+  <h4 class="modal-title">Update</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 text-center">
+        <div class="text-left">                
+        <label for="title">Title</label>
+        </div>
+        <input id="title" type="text" [ngModel]="post.title" class="form-control editpost-input" placeholder="Title" #postTitle/>
+        <div class="text-left descriptionlbl">                
+        <label for="description">Description</label>
+        </div>
+        <textarea id="description" type="text" [ngModel]="post.body" class="form-control editpost-input" placeholder="Description" maxlength="200" rows="3" #postBody></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="saveChangesInPost(postTitle, postBody)">Save</button>
+  </div>
+</div>

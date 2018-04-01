@@ -1,0 +1,37 @@
+<div class="parent">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <h1>Flitter</h1>
+    <div class="navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            </li>
+        </ul>
+        <form class="form-inline">
+        <div *ngIf="userName">
+        <h3> Welcome: {{userName}}</h3>
+        </div>
+        </form>
+        <form class="form-inline">
+            <button type="button" class="btn btn-warning" (click)="openPublicPage()">Public Page</button>
+        </form>
+        <div class="space">
+        </div>
+        <form class="form-inline">
+                <button type="button" class="btn btn-dark" (click)="logOut()">Logout</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 text-center">
+            <h2>Post Something</h2>
+            <input type="text" class="form-control" placeholder="Title" maxlength="100" #postTitle/>
+                <textarea type="text" class="form-control" placeholder="Description" maxlength="200" rows="3" #postBody></textarea>
+            <div class="text-right">                
+                <button class="btn btn-success" (click)="createPost(postTitle,postBody)">Post</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-posts-list [isEditable]="true"></app-posts-list>
+</div>

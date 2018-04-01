@@ -1,0 +1,46 @@
+<div class="form-box">
+  <div class="form-top">
+    <div class="form-top-left">
+      <h3>Sign up now</h3>
+      <p>Fill in the form below to get instant access:</p>
+    </div>
+    <div class="form-top-right">
+      <i class="fa fa-pencil"></i>
+    </div>
+  </div>
+  <div class="form-bottom">
+    <form role="form" action="" method="post" class="registration-form" #formCtrl="ngForm">
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username..." class="form-first-name form-control" id="form-username" [(ngModel)]="user.username"
+          pattern="^[a-zA-Z0-9_.-]*$" #username="ngModel" required>
+      </div>
+      <div *ngIf="username.errors && (username.dirty || username.touched)" class="alert alert-danger">
+        <div [hidden]="!username.errors.pattern">
+          User name can have alphabets and numbers only.
+        </div>
+        <div [hidden]="!username.errors.required">
+          User name cannot be empty.
+        </div>
+
+      </div>
+      <div class="form-group">
+        <input type="password" minlength="6" name="password" placeholder="Password..." class="form-last-name form-control" id="password"
+          [(ngModel)]="user.password" required validateEqual="confirmPassword" #password="ngModel" reverse="true">
+      </div>
+      <div [hidden]="password.valid || (password.pristine)" class="alert alert-danger">
+        Password should be 6 digits long.
+      </div>
+      <div class="form-group">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password..." class="form-last-name form-control" id="confirmPassword"
+          [(ngModel)]="user.confirmPassword" required #confirmPassword="ngModel" validateEqual="password">
+      </div>
+      <div [hidden]="confirmPassword.valid || (confirmPassword.pristine)" class="alert alert-danger">
+        Password mismatch
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="registerWithUserName()" [disabled]="formCtrl.form.invalid">Sign me up!</button>
+      <div *ngIf="serverError" class="alert alert-danger">
+        {{serverError}}
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+h3 {
+	font-size: 1.5em;
+    font-weight: 300;
+    color: #555;
+	line-height: 1em;
+	text-align: center;
+}
+
+.form-box {
+	margin-top: 2em;
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 1em 0.5em 1em;
+	background: #f3f3f3;
+	border-radius: 0.5em 0.5em 0 0;
+	text-align: left;
+}
+
+.form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 1.5em;
+}
+
+.form-top-left h3 { 
+	margin-top: 0.3em;
+	text-align: left;
+ }
+
+.form-top-right {
+	float: left;
+	width: 25%;
+	padding-top: 0.45em;
+	font-size: 4em;
+	color: #ddd;
+	line-height: 1em;
+	text-align: right;
+}
+
+.form-bottom {
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	background: #eee;
+	border-radius: 0 0 0.5em 0.5em;
+	text-align: left;
+}
+
+.social-login {
+	margin-top: 2em;
+}
+
+.social-login-buttons {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.middle-border {
+	min-height: 1em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-right: 1px solid #ddd;
+}
+
+.alert-danger	{
+
+	margin-top: 1em;
+}
+
+ @media (max-width: 750px) { /* Standard width for small medium devices */
+
+	/*
+	This overiding for smaller devices is being used to
+	remove extra space between login and sign up boxes
+	*/
+
+	.middle-border	{
+		min-height: 1em;
+		margin-top: 0em;
+		margin-bottom: 0em;
+		border-right: 1px solid #ddd;
+	}
+
+	.social-login-buttons {
+		margin-top: 1.5em;
+		margin-bottom: 0em;
+	}
+
+ } 

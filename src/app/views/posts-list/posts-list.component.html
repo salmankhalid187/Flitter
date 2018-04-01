@@ -1,0 +1,24 @@
+<div class="parent">
+    <!-- This Header will only be activated in public blog page -->
+    <div *ngIf="!isEditable">
+        <div class="jumbotron">
+            <h1>Flitter</h1>
+            <p>{{userName}}</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 text-center">
+                <!-- Async pipe is being used to fetch results asynchronously -->
+                <div *ngFor="let post of posts | async">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- This isEditable will open this post in editable mode -->
+                            <app-post [post]='post' [isEditable]="isEditable"></app-post>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
