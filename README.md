@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
+## Features
+
+1. This repo demonstrates the integeration of firebase, Angular 5, Bootsrap 4
+2. Its using firebase authentication for login and sign up of users.
+3. Its fetching lists from Firebase RTD. 
+4. All pages are responsive which has been acheived using bootsrap.
+
+## Live Demo
+
+This project has been deployed on this link:
+
+https://flitter-a5ea4.firebaseapp.com/
 
 ## Deployment Steps
 
@@ -27,17 +39,11 @@ NOTE: This project requires public read access for all posts so please make sure
 
 These rules can be set from database.rules.json and also from firebase Dashboard.
 
-## Live Demo
-
-This project has been deployed on this link:
-
-https://flitter-a5ea4.firebaseapp.com/
-
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## References
+## Refrences
 
 https://github.com/angular/angular-cli/wiki
 https://angular.io/tutorial/toh-pt2#final-code-review
