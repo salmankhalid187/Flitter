@@ -9,6 +9,10 @@ export class AuthGuard implements CanActivate {
   constructor(private router: Router,
     private authService: AuthService) { }
 
+    /*
+    It reads the current state from Firebase Auth service 
+    */
+
     canActivate() {
       if  ( this.authService.isLoggedIn() ) {
         return true;

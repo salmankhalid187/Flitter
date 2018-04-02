@@ -21,6 +21,8 @@ import { RegisterService } from './services/register/register.service';
 import { EqualValidator } from './validator/equal-validator.directive';
 import { NgbdModalContent } from './views/posts-list/post/post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UsersService } from './services/users/users.service';
+import { UsersListComponent } from './views/users-list/users-list.component'
 
 @NgModule({
   declarations: [ /* List of components being used in app */
@@ -31,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PostsListComponent,
     PostComponent,
     EqualValidator,
-    NgbdModalContent
+    NgbdModalContent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   providers: [AuthService,  /* Login service */
     AuthGuard,  /* Safeguard service to block direct access to dashboard */
     PostService,  /* Fetching data from firebase RTD */
-    RegisterService], /* User sign up service  */
+    RegisterService, /* User sign up service  */
+    UsersService  /* List of users */
+  ], 
   bootstrap: [AppComponent,NgbdModalContent]
 })
 export class AppModule { }
