@@ -2,26 +2,51 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Deployment Steps
 
-## Code scaffolding
+1. Install npm https://www.npmjs.com/get-npm.
+2. Install AngularCli using this command 'npm install -g @angular/cli'
+3. Clone the repo and go into the project
+4. Execute this command 'npm install'
+5. ng serve -—o
+Currently this project is using default Firebase configuration. If you want to deploy this project in your own firebase account then continue on these steps.
+6. Go to https://console.firebase.google.com and create New project.
+7. Go to 'Add Firebase to your web app' from dashboard and copy firebase configurations.
+8. Add these configurations to (src/environment.ts and src/environment.prod.ts)
+9. Install firebase-tools using this link and deploy your project (https://github.com/firebase/firebase-tools)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+NOTE: This project requires public read access for all posts so please make sure to set data base rules as follows:
 
-## Build
+{
+  	"rules": {
+	    ".read": "true",
+	    ".write": "auth != null"
+	  }
+}
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+These rules can be set from database.rules.json and also from firebase Dashboard.
 
-## Running unit tests
+## Live Demo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project has been deployed on this link:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+https://flitter-a5ea4.firebaseapp.com/
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## References
+
+https://github.com/angular/angular-cli/wiki
+https://angular.io/tutorial/toh-pt2#final-code-review
+https://firebase.google.com/docs/hosting/
+https://github.com/angular/angularfire2/blob/master/docs/rtdb/querying-lists.md
+https://ng-bootstrap.github.io/#/getting-started
+https://ng-bootstrap.github.io/#/components/modal/examples
+https://scotch.io/tutorials/deploying-an-angular-cli-app-to-production-with-firebase
+https://codingthesmartway.com/angular-2-forms-tutorial-validation/
+https://angular.io/api/forms/PatternValidator
+
+
