@@ -1,0 +1,8 @@
+<h2>Users List</h2>
+<ul>
+  <li *ngFor="let entry of users | async">
+    <a routerLink="/users/{{entry.key}}">
+      {{entry.key}}
+    </a>
+  </li>
+</ul>
