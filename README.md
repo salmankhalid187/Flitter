@@ -45,15 +45,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Refrences
 
-https://github.com/angular/angular-cli/wiki
-https://angular.io/tutorial/toh-pt2#final-code-review
-https://firebase.google.com/docs/hosting/
-https://github.com/angular/angularfire2/blob/master/docs/rtdb/querying-lists.md
-https://ng-bootstrap.github.io/#/getting-started
-https://ng-bootstrap.github.io/#/components/modal/examples
-https://scotch.io/tutorials/deploying-an-angular-cli-app-to-production-with-firebase
-https://codingthesmartway.com/angular-2-forms-tutorial-validation/
-https://azmind.com/demo/bootstrap-login-register-forms/form-3/index.html
-https://angular.io/api/forms/PatternValidator
+https://github.com/angular/angular-cli/wiki	\n
+https://angular.io/tutorial/toh-pt2#final-code-review	\n
+https://firebase.google.com/docs/hosting/ \n
+https://github.com/angular/angularfire2/blob/master/docs/rtdb/querying-lists.md	\n
+https://ng-bootstrap.github.io/#/getting-started	\n
+https://ng-bootstrap.github.io/#/components/modal/examples	\n
+https://scotch.io/tutorials/deploying-an-angular-cli-app-to-production-with-firebase	\n
+https://codingthesmartway.com/angular-2-forms-tutorial-validation/	\n
+https://azmind.com/demo/bootstrap-login-register-forms/form-3/index.html	\n
+https://angular.io/api/forms/PatternValidator	\n
 
 
