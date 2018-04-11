@@ -53,6 +53,7 @@ https://ng-bootstrap.github.io/#/getting-started
 https://ng-bootstrap.github.io/#/components/modal/examples
 https://scotch.io/tutorials/deploying-an-angular-cli-app-to-production-with-firebase
 https://codingthesmartway.com/angular-2-forms-tutorial-validation/
+https://azmind.com/demo/bootstrap-login-register-forms/form-3/index.html
 https://angular.io/api/forms/PatternValidator
 
 
