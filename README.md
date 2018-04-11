@@ -45,7 +45,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Refrences
 
-https://github.com/angular/angular-cli/wiki	\n
+https://github.com/angular/angular-cli/wiki	<br />
 https://angular.io/tutorial/toh-pt2#final-code-review	\n
 https://firebase.google.com/docs/hosting/ \n
 https://github.com/angular/angularfire2/blob/master/docs/rtdb/querying-lists.md	\n
